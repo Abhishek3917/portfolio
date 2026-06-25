@@ -2,7 +2,7 @@
 import mainbottom from '/main_bottom.png'
 import { File,Mail} from 'lucide-react'
 import { ProjectsSection } from "./ProjectSection";
-import { ArchAscii } from '../Data/Archascii';
+import { ArchAscii, astronout } from '../Data/Archascii';
 
 export function MainPage(){
     return(
@@ -40,7 +40,7 @@ export function MainPage(){
         <div>
   
             <pre className='text-(--primary) lg:w-80 w-48 
-            drop-shadow-[0_0_40px_rgba(0,255,136,0.4)] animate-[float_3s_ease-in-out_infinite] '>{ArchAscii}</pre>
+            drop-shadow-[0_0_40px_rgba(0,255,136,0.4)] animate-[float_3s_ease-in-out_infinite] '>{astronout}</pre>
         </div>
 
     </section>

@@ -1,27 +1,17 @@
-import {projects} from "../Data/data.ts"
+import { Link } from "react-router-dom";
+import {projects} from "../Data/projectdata.ts"
+import type { ProjectCardprops } from "../Data/projectdata.ts";
 
-type ProjectCardprops = {
-
-    icons:React.ElementType;
-    iconColor: string;
-    title:string;
-    description:string;
-    tech:string[];
-
-}
-
-function ProjectCard({title,description,tech,icons,iconColor}:ProjectCardprops){
+function ProjectCard({slug,title,description,tech,icons,iconColor}:ProjectCardprops){
     const Icon = icons;
 return(
-    <div className=" border border-green-500/20 rounded-xl p-6 bg-black/30 backdrop-blur-sm   hover:border-green-500 50 hover:-translate-y-1 transition-all duration-300">
+    <div className=" border border-green-500/20 rounded-xl p-6 bg-black/30 backdrop-blur-sm   hover:border-green-500/50 hover:-translate-y-1 transition-all duration-300">
               <div
         className=" w-16 h-16 flex items-center justify-center rounded-lg border border-green-500/40 mb-5
         "
       >
         <Icon size={32} className={iconColor}/>
       </div>
-
-        <h1>{title}</h1>
         <h3
         className=" text-2xl font-semibold text-green-400 mb-3">
         {title}
@@ -44,10 +34,9 @@ return(
       </p>
 
       {/* Link */}
-      <button
-        className=" text-green-400 hover:text-green-300 transition-colors font-medium ">
+      <Link to={`/project/${slug}`} className=" text-green-400 hover:text-green-300 transition-colors font-medium ">
         {">"} view project
-      </button>
+      </Link>
     </div>
         
         )
@@ -61,13 +50,9 @@ export function ProjectsSection(){
             </h2>
             <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {projects.map(project => (
-                    <ProjectCard 
-                        key={project.title}
-                        iconColor={project.iconColor}
-                        icons={project.icons}
-                        title={project.title} 
-                        description={project.description}
-                        tech={project.tech} 
+                    <ProjectCard
+                       key={project.slug}
+                        {...project}
                     />                  
                 ))}
             </div>
