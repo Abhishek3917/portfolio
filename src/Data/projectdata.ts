@@ -28,7 +28,7 @@ export const projects = [
     sourceCode:"https://demo.example.com",
     deployment:"docker",
     lastUpdated:"2025-07-24",
-    status:"active"
+    status:"live"
   },
 
   { slug:"zipdf",
@@ -58,7 +58,7 @@ export const projects = [
     sourceCode:"https://demo.example.com",
     deployment:"docker",
     lastUpdated:"May 20,2025",
-    status:"active"
+    status:"live"
   },
 
   { slug:"zxstream",
