@@ -8,6 +8,7 @@
   --muted: #9ca3af;
 
   --border: rgba(0, 255, 136, 0.2);
+  font-family: monospace;
   
 }
 @keyframes float {
