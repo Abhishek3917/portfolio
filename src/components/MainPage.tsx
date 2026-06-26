@@ -1,12 +1,11 @@
-// import Archlogo from '/archlinux-logo.png'
-import mainbottom from '/main_bottom.png'
+
+import mainbottom from '../assets/main_bottom.avif'
 import { File,Mail} from 'lucide-react'
 import { ProjectsSection } from "./ProjectSection";
-import { ArchAscii, astronout } from '../Data/Archascii';
+import { astronout } from '../Data/Archascii';
 
 export function MainPage(){
-    return(
-        
+    return(        
         <>
         
           <section className="relative grid grid-cols-1 lg:grid-cols-2 items-center gap-10 max-w-7xl px-6 mx-auto lg:py-20 sm:py-20 ">
