@@ -9,17 +9,21 @@ function ProjectPage(
   const Icon = icons;
 
   return (
+<>
+
     <section className="bg-zinc-950/35 text-white min-h-screen px-6 py-12 project">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-[2fr_1fr] gap-8 ">
         <div className=" rounded-3xl border border-green-500/20 p-10 bg-green-950/25">
           <div className="mb-12">
+              <a href="/" className="text-green-400 font-semibold tracking-[0.25em] flex uppercase text-lg">home</a>
             <p className="text-green-400 font-semibold tracking-[0.25em] uppercase text-lg">
-              {">_"} Project Overview
+              {">_"} Project Overview 
             </p>
-
+            
             <h1 className="text-4xl lg:text-5xl font-bold mt-6 mb-6">
               {title}
             </h1>
+            
             <div className="w-32 h-1 bg-green-500 rounded-full mb-8"/>
             <p className="text-gray-300 leading-relaxed text-lg">
               {description}
@@ -56,7 +60,7 @@ function ProjectPage(
                   key={title}
                   className="relative pl-10 pb-10"
                 >
-                  <div className="absolute top-2 w-3 h-3 rounded-full bg-green-400" />
+                  <div className="absolute -left-2 top-2 w-3 h-3 rounded-full bg-green-400" />
 
                   <h3 className="text-green-400 text-xl mb-3">
                     {title}
@@ -75,8 +79,9 @@ function ProjectPage(
             </div>
           </div>
         </div>
+        {/* rightside status */}
         <div className=" rounded-3xl border border-green-500/20 bg-black/70 backdrop-blur-sm p-8 h-fit sticky top-8 ">
-          {/* PROJECT INFO */}
+    
           <div className="flex gap-5 items-center mb-10">
             <div className=" w-24 h-24 flex items-center justify-center bg-green-500/5 " >
               <Icon size={42} className={iconColor} />
@@ -172,6 +177,8 @@ function ProjectPage(
         </div>
       </div>
     </section>
+
+</>
   );
 }
 

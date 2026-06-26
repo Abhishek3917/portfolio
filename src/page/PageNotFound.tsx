@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom"
-import { ArchAscii,astronout } from "../Data/Archascii";
+import {astronout } from "../Data/Archascii";
 
 export default function PageNotFound() {
   return (
