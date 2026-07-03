@@ -13,8 +13,6 @@ type Terminalprops = {
 export default function Terminal({ onClose }: Terminalprops) {
   const [input, setInput] = useState("");
   const [history, setHistory] = useState<TerminalLine[]>([]);
-  
-
   function handleKeyDown(e:React.KeyboardEvent<HTMLInputElement>)
   {
       if(e.key!=='Enter') return ;
@@ -32,14 +30,11 @@ export default function Terminal({ onClose }: Terminalprops) {
       let type: TerminalLine["type"] = "output";
       if (handler) {
             output = handler(parsed.args);
-            console.log(output);
       }
       else {
-          console.log("Command not found");
+          
           type = "error";
       }
-      console.log(parsed.command);
-      console.log(parsed.args);
       const id =Date.now()
       setHistory(prev => [
                             ...prev,
@@ -61,7 +56,7 @@ export default function Terminal({ onClose }: Terminalprops) {
     <div
       className=" fixed inset-0 backdrop-blur-sm flex items-center justify-center z-50 " style={{fontFamily:terminalTheme.font}}>
       <div
-        className=" w-[90%] max-w-5xl h-[80vh] rounded-xl border-2 overflow-y-scroll"
+        className=" w-[90%] max-w-5xl h-[80vh] rounded-xl border-2 overflow-y-auto"
         style={{
         backgroundColor:terminalTheme.background,
         borderColor:terminalTheme.accent,}}
