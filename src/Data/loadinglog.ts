@@ -1,64 +1,20 @@
-
+//  dev jokes
 export const bootLogs = [
-    " :: Initializing cgroup subsys cpuset",
-    " :: Initializing cgroup subsys cpu",
-    " :: Linux version 6.8.9-arch1-1 (linux@archlinux) (gcc (GCC) 13.2.1, GNU ld (GNU Binutils) 2.42.0)",
-    " :: Command line: initrd=\intel-ucode.img initrd=\initramfs-linux.img root=UUID=8b3e... rw quiet loglevel=3",
-    " :: ACPI: Added 20 ACPI tables",
-    " :: pci 0000:00:02.0: [8086:9bc4] type 00 class 0x030000",
-    " :: EXT4-fs (nvme0n1p2): mounted filesystem with ordered data mode.",
-    " :: Starting systemd-udevd.service...",
-    " :: Started systemd-udevd.service.",
-    " :: Starting Network Service...",
-    " :: Enumeration completed",
-    " :: Started Network Service",
-    " :: Starting Bluetooth service..",
-    " :: Started Bluetooth service.",
-    " :: detected capacity change from 0 to 48600",
-    " :: Reached target graphical.target - Graphical Interface.",
-    " :: ZX Portfolio Boot Environment",
-    " :: Loading kernel modules...",
-    " :: Mounting portfolio filesystem...",
-    " :: Starting network manager...",
-    " :: Loading Arch Linux profile...",
-    " :: Initializing ZX Stream service...",
-    " :: Initializing ZIPDF service...",
-    " :: Loading projects database...",
-    " :: Starting terminal interface...",
+    " :: [BOOT] Waking up the silicon hamsters with standard cattle prods...",
+    " :: [INIT] Loading caffeinated_consciousness.sys",
+    " :: [WARN] Core temperature optimal, but developer anxiety is high.",
+    " :: [INFO] Initializing imposter_syndrome_blocker... [FAILED: Retrying...]",
+    " :: [FS] Mounting /brain/creative_ideas... (404 Not Found)",
+    " :: [FS] Mounting /brain/memes_and_trivia... (1.2 TB allocated)",
+    " :: [NET] Pinging StackOverflow... 'Please help me' packet sent.",
+    " :: [PROC] Disabling 'Procrastination Daemon' (Process refused to die)",
+    " :: [DRV] Loading coffee_intake_monitor.drv (Current level: Critical)",
+    " :: [EXEC] Running 'git commit -m \"fixing stuff for the 5th time\" --force'",
+    " :: [WARN] 12,403 unread emails detected. Initiating emotional avoidance protocol.",
+    " :: [INFO] Making spinners spin faster so the site looks optimized...",
+    " :: [LOAD] Injecting 500 lines of unoptimized CSS hacks...",
+    " :: [LOAD] Compiling experience.dmg... (Excluding the embarrassing parts)",
+    " :: [OK] It works on my machine. Deploying to production anyway.",
     "",
-    "[ OK ] Welcome User",
-    ];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    " [ SUCCESS ] Welcome, User. Please don't look at the source code.",
+];
