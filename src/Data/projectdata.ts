@@ -93,6 +93,24 @@ export const projects = [
   
 ];
 
+export const profile = {
+    name: "Abhishek S Kumar",
+
+    role: "Full Stack Developer | Linux Enthusiast",
+
+    about: `
+              Hi! I'm Abhishek S Kumar.
+
+              I enjoy building full-stack web applications,
+              developing Linux automation tools,
+              self-hosting services,
+              and contributing to open-source projects.
+
+              My primary language is Python,
+              while React and TypeScript are my preferred frontend stack.
+              `
+};
+
 //props
 
 export type ChallengeMap = Record<

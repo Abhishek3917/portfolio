@@ -1,3 +1,4 @@
+import { profile } from "../../Data/projectdata";
 export const commands = {
     help: () => `
                     Available commands:
@@ -11,7 +12,7 @@ export const commands = {
                     clear
                     `,
     about: () =>
-        "Hi! I'm Abhishek S Kumar, a Full Stack Developer and Linux enthusiast.",
+        profile.about,
 
     projects: () =>
         "Arch Install\nZIPDF\nZXStream",
