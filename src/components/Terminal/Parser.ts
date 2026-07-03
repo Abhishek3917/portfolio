@@ -1,9 +1,9 @@
 
 export default function parseCommand(input:string){
-    const args = input.trim().split(/\S+/);
+    const tokens = input.trim().split(/\s+/);
 
     return {
-        command: args[0].toLowerCase(),
-        args: args.slice(1),
+        command: tokens[0].toLowerCase(),
+        args: tokens.slice(1),
     }
 }
