@@ -75,8 +75,8 @@ export default function Terminal({ onClose }: Terminalprops) {
             <CircleX />
           </button>
         </div>
-
     <div className="flex gap-3 p-3 flex-col text-xl ">
+        <h1 style={{color:terminalTheme.output}}>Type help </h1>
           {history.map((line) => (
             <div key={line.id}>
                 {line.type === "command" && (

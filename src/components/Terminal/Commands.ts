@@ -1,8 +1,8 @@
-import { profile } from "../../Data/projectdata";
+import { profile } from "../../Data/Terminaldata";
 export const commands = {
     help: () => `
-                    Available commands:
-                    
+                    Available commands:      
+
                     help
                     about
                     projects
