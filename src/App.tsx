@@ -12,7 +12,7 @@ export default function App() {
       {!booted ? (
         <BootScreen onComplete={() => setbooted(true)} />
       ) : (
-            <main className="min-h-screen relative bg-[#050505] overflow-hidden ">
+            <main className="min-h-screen relative bg-(--bg) overflow-hidden ">
 
       <div
         className="

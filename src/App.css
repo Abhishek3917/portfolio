@@ -1,16 +1,38 @@
+@import "tailwindcss";
+
 :root {
+/* global font */
+  font-size: large;
+  font-family: monospace;
+
   --bg: #050505;
 
   --primary: #00ff88;
-  --primary-dark: #05502b;
+  --primary-dark: #2b2d2c;
+  --primary-2:#099e58;
 
-  --text: #e5e7eb;
+  --text: #e5e8f0;
   --muted: #9ca3af;
 
-  --border: rgba(0, 255, 136, 0.2);
-  font-family: monospace;
-  
+  --border: rgba(243, 140, 6, 0.2);
+
+  /* card section */
+  --bg-card: #011003;
+  --bg-card-skill:#1b2b23;
+
+  /* project section */
+  --bg-project-desc:rgb(2, 27, 20);
+  --bg-project-stat:rgb(2, 18, 3);
+  --bg-project-border:green;
+  --hover:rgb(3, 82, 3);
+  --hr:rgb(7, 2, 18);
+
+  /* 404 page */
+  --bg-404-border:green;
 }
+
+
+
 @keyframes float {
   0%,100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }

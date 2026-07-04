@@ -17,15 +17,15 @@ export function BootScreen({ onComplete }: { onComplete: () => void }) {
 
         setTimeout(() => {
           onComplete();
-        }, 5);
+        }, 100);
       }
-    }, 5);
+    }, 200);
 
     return () => clearInterval(interval);
   }, [onComplete]);
 
   return (
-    <div className="fixed inset-0 bg-black text-green-400 font-mono p-8 flex items-start">
+    <div className="fixed inset-0 bg-black text-(--muted) font-mono p-8 flex items-start">
       <div>
         {lines.map((line, i) => (
           <div key={i}>{line}</div>

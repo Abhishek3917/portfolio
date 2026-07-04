@@ -5,15 +5,13 @@ import type { ProjectCardprops } from "../Data/projectdata.ts";
 function ProjectCard({slug,title,description,tech,icons,iconColor}:ProjectCardprops){
     const Icon = icons;
 return(
-    <div className=" border border-green-500/20 rounded-xl p-6 bg-black/30 backdrop-blur-sm   hover:border-green-500/50 hover:-translate-y-1 transition-all duration-300">
+    <div className=" border border-(--border) rounded-xl p-6 bg-(--bg-card) backdrop-blur-sm   hover:border-(--primary) hover:-translate-y-1 transition-all duration-300">
               <div
-        className=" w-16 h-16 flex items-center justify-center rounded-lg border border-green-500/40 mb-5
-        "
-      >
+        className=" w-16 h-16 flex items-center justify-center rounded-lg border border-(--border) mb-5" >
         <Icon size={32} className={iconColor}/>
       </div>
         <h3
-        className=" text-2xl font-semibold text-green-400 mb-3">
+        className=" text-2xl font-semibold text-(--primary) mb-3">
         {title}
       </h3>
 
@@ -22,7 +20,7 @@ return(
         {tech.map((item) => (
           <span
             key={item}
-            className=" px-3 py-1 rounded-md text-sm bg-green-500/10 text-cyan-400 border border-green-500/10">
+            className=" px-3 py-1 rounded-md text-sm bg-(--bg-card-skill) text-cyan-400 border border-(--muted)">
             {item}
           </span>
         ))}
