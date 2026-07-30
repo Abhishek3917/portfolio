@@ -3,7 +3,7 @@ import { terminalTheme } from './TerminalTheme';
 import { useState } from 'react';
 import type { TerminalLine } from './types';
 import parseCommand from './Parser';
-import { commands } from './Commands';
+import { Commands} from './Commands';
 
 
 type Terminalprops = {
@@ -24,7 +24,7 @@ export default function Terminal({ onClose }: Terminalprops) {
         }
 
       const parsed = parseCommand(command)
-      const handler = commands[parsed.command as keyof typeof commands];
+      const handler = Commands[parsed.command as keyof typeof Commands];
       let output = "";
 
       let type: TerminalLine["type"] = "output";

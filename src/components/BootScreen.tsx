@@ -17,9 +17,9 @@ export function BootScreen({ onComplete }: { onComplete: () => void }) {
 
         setTimeout(() => {
           onComplete();
-        }, 100);
+        }, 0);
       }
-    }, 200);
+    }, 0);
 
     return () => clearInterval(interval);
   }, [onComplete]);

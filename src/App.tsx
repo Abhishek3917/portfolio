@@ -22,11 +22,7 @@ export default function App() {
       />
       <MainPage />       
           
-    <footer>
-      <div className="text-amber-300 text-center text-lg p-4">
-        <h1>Contact</h1>
-      </div>
-    </footer>
+
     </main>
     
       )}

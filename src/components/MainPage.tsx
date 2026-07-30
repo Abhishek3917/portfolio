@@ -1,6 +1,5 @@
 
 import mainbottom from '../assets/main_bottom.avif'
-import { GitBranch,Mail} from 'lucide-react'
 import { ProjectsSection } from "./ProjectSection";
 import { astronout } from '../Data/Archascii';
 
@@ -28,12 +27,7 @@ export function MainPage(){
             </div>
             <div className="text-(--primary)">
                 <button className="text-lg mt-6 border border-(--primary) px-6 py-3 rounded-lg hover:bg-(--primary) hover:text-black animate-pulse">Press Ctrl + K to open terminal</button>
-            </div>
-        <div className='flex gap-7 relative text-(--primary) py-5 p-4 '>
-        <GitBranch />
-        <Mail size={30} className='text-(--primary) '/>
-
-        </div>
+            </div> 
         </div>
         <div>
   
