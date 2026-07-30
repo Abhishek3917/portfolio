@@ -1,5 +1,5 @@
 import { profile } from "../../Data/Terminaldata";
-export const commands = {
+export const Commands = {
     help: () => `
                     Available commands:      
 
