@@ -26,7 +26,7 @@ export function MainPage(){
                 </p>
             </div>
             <div className="text-(--primary)">
-                <button className="text-lg mt-6 border border-(--primary) px-6 py-3 rounded-lg hover:bg-(--primary) hover:text-black animate-pulse">Press Ctrl + K to open terminal</button>
+                <button className="text-lg lg:mt-9 mt-6 border border-(--primary) px-6 py-3 rounded-lg hover:bg-(--primary) hover:text-black animate-pulse">Press Ctrl + K to open terminal</button>
             </div> 
         </div>
         <div>
